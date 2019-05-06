@@ -1,0 +1,10 @@
+.form-group input {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.form-group label {
+    font-weight: bold;
+}

@@ -1,5 +1,6 @@
 <?php
 require_once 'model/database.php';
+session_start();
 
 $controller = 'web';
 

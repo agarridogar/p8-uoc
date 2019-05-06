@@ -39,30 +39,27 @@ class Usuario
 		}
 	}
 
-	public function Obtener($id)
+	public function Obtener($usuario_id)
 	{
 		try 
 		{
-			$stm = $this->pdo
-			          ->prepare("SELECT * FROM usuarios WHERE usuario_id = ?");
-			          
-
+			$stm = $this->pdo->prepare("SELECT * FROM usuarios WHERE usuario_id = ?");			          
 			$stm->execute(array($id));
 			return $stm->fetch(PDO::FETCH_OBJ);
+
 		} catch (Exception $e) 
 		{
 			die($e->getMessage());
 		}
 	}
 
-	public function Eliminar($id)
+	public function Eliminar($usuario_id)
 	{
 		try 
 		{
-			$stm = $this->pdo
-			            ->prepare("DELETE FROM usuarios WHERE usuario_id = ?");			          
-
+			$stm = $this->pdo->prepare("DELETE FROM usuarios WHERE usuario_id = ?");			          
 			$stm->execute(array($id));
+
 		} catch (Exception $e) 
 		{
 			die($e->getMessage());
@@ -71,12 +68,12 @@ class Usuario
 
 
 
-	public function Registrar(Alumno $data)
+	public function Registrar(Usuario $data)
 	{
 		try 
 		{
 		$sql = "INSERT INTO usuarios (roles_id, nombre, password, email) 
-		        VALUES (?, ?, ?, ?, ?, ?)";
+		        VALUES (?, ?, ?, ?)";
 
 		$this->pdo->prepare($sql)
 		     ->execute(
@@ -84,13 +81,46 @@ class Usuario
                     $data->roles_id,
                     $data->nombre, 
                     $data->password, 
-                    $data->email,
- 
+                    $data->email, 
                 )
 			);
 		} catch (Exception $e) 
 		{
-			die($e->getMessage());
+			$_SESSION['errorvalidacion'] ="Error en el registro. El nombre de usuario ya existe.";			
+			header("Location: index.php?c=usuario&a=RegistroUsuarios");
 		}
+	}
+
+
+
+
+	public function Validar($user){
+		
+		$sql = "SELECT a.nombre, b.roles_descripcion as roles_descripcion
+		FROM usuarios a 
+		INNER JOIN roles b where 
+		(a.nombre = :nombre  AND a.password = :password) and a.roles_id = b.id_rol ;"; 
+
+		$result = $this->pdo->prepare($sql); 
+		$result->bindValue	(':nombre', $user->nombre, PDO::PARAM_STR);
+		$result->bindValue(':password', $user->password, PDO::PARAM_STR);
+		$result->execute(); 
+		$count = $result->rowCount();
+		$data=$result->fetch(PDO::FETCH_OBJ);
+		
+		if($count){
+			$_SESSION['nombre']=$data->nombre;
+			$sesion=$_SESSION['nombre'];
+
+			$_SESSION['roles_descripcion']=$data->roles_descripcion;
+			$sesionrol=$_SESSION['roles_descripcion'];
+		
+			//esto lo pongo de momento, luego redirigirá a la página de inicio
+			echo "Nombre del user: ".$sesion;
+
+			//header("Location: index.php");
+		}else{
+			echo "Error.";  
+		} 
 	}
 }

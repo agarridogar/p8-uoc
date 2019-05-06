@@ -1,29 +1,27 @@
-<h1 class="page-header">Usuarios</h1>
+
+<link rel="stylesheet" href="assets/css/style_login.css" />
+<h1 class="page-header">INICIAR SESIÓN</h1>
+
+<div class="row justify-content-center">
+<form action="?c=usuario&a=iniciarSesion" method="post" enctype="multipart/form-data">
+    
+    <div class="form-group">
+        <label>Nombre de usuario</label>
+        <input type="text" name="nombre" value="<?php echo $user->nombre; ?>" class="form-control" placeholder="Ingrese su nombre de usuario" style="text-align: center"  />
+    </div>
+    
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password" value="<?php echo $user->password; ?>" class="form-control" placeholder="Ingrese su password" style="text-align: center" />
+    </div>
+    <hr/>
+    <div class="text-center">
+        <button class="btn btn-success">Acceder</button>
+    </div>
+</form>
+</div>
+<br>
 
 
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th style="width:180px;">Id</th>
-            <th>Roles</th>
-            <th>Nombre</th>
-            <th style="width:120px;">Pwd</th>
-            <th style="width:120px;">email</th>
 
-        </tr>
-    </thead>
-    <tbody>
-	
-    <?php foreach($this->model_usuario->Listar() as $r): ?>
-        <tr>
-            <td><?php echo $r->usuario_id; ?></td>
-            <td><?php echo $r->roles_id; ?></td>
-            <td><?php echo $r->nombre; ?></td>
-            <td><?php echo $r->password; ?></td>
-            <td><?php echo $r->email; ?></td>
-
-        </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table> 
