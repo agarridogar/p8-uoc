@@ -22,7 +22,7 @@
                         </span>
                         </div>
                         <div class="text-center">
-                            <p><small><b>Introduce tu correo electrónico</small></b></p>
+                            <p><small><b>Introduce tu nombre de usuario</small></b></p>
                         </div>
                         <div class="form-group">
                         <input type="text" name="nombre" value="<?php echo $user->nombre; ?>" class="form-control" placeholder="Ingresa tu nombre de usuario" style="text-align: center"  required/>
