@@ -20,6 +20,13 @@ class WebController{
         require_once 'view/footer.php';
     }
 
+    public function faq() {
+        
+        require_once 'view/header.php';
+        require_once 'view/faq/vista_faq.php';
+        require_once 'view/footer.php';
+    }
+
 
 }
 

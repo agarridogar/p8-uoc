@@ -30,7 +30,7 @@
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Dónde estamos</a></li>
             <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="?c=web&a=faq">FAQ</a></li>
             <li><a href="#">Servicios</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
