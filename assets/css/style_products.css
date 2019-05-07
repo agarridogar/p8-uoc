@@ -1,7 +1,102 @@
-main {
+body {
   background-color: #cccccc !important;
 }
 
-.white-box {
+main.product-area {
+  background-color: #cccccc;
+}
+
+main.product-area div {
+  box-sizing: border-box;
+}
+
+main.product-area img {
+  width: 100%;
+}
+
+main.product-area .btn.suncoast {
+  border: 1px solid #2e2e2e;
+  color: #ffffff;
+  background-color: #e2bc62;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: normal;
+}
+
+main.product-area h1 {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+main.product-area .white-box {
   background-color: #ffffff;
+  border-radius: 5px;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+main.product-area .column-design {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+main.product-area .row-design {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main.product-area .row-plain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main.product-area .principal-box {
+  margin-bottom: 50px;
+}
+
+main.product-area .principal-box .images {
+  flex-basis: 63%;
+}
+
+main.product-area .principal-box .images .principal {
+  margin-bottom: 20px;
+}
+
+main.product-area .principal-box .images .more-img img {
+  max-width: 24%;
+}
+
+main.product-area .principal-box .excerpt {
+  background-color: #e7f3f8;
+  border: 1px solid #2e2e2e;
+  padding: 20px;
+  flex-basis: 35%;
+  justify-content: space-between;
+}
+
+main.product-area .principal-box .excerpt .price {
+  line-height: 40px;
+}
+
+main.product-area .perks {
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
+
+main.product-area .perks div span {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
 }
