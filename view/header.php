@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="assets/css/style.css" />
 
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
         
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	</head>
