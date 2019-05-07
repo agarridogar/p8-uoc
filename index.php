@@ -10,7 +10,9 @@ if(!isset($_REQUEST['c']))
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
-    $controller->Index();    
+
+    $accion = isset($_REQUEST['a']) ? ucwords($_REQUEST['a']) : 'Index';
+    call_user_func( array( $controller, $accion ) );
 }
 else
 {
