@@ -2,7 +2,7 @@
                 <div class="col-xs-12">
                     <hr />
                     <footer class="text-center well">
-                     
+                        <img src="assets/img/rrss.jpg" style="width: 10%; height: 10%;"/> 
                     </footer>                
                 </div>    
             </div>

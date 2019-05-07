@@ -1,0 +1,38 @@
+html, body { height: 100%; }
+
+
+  div #cat {
+    
+    height: 100%;
+    width: 100%;
+    margin:0%;
+  }
+
+  div #subcat {
+    border: none;
+    background-color: lightblue;
+    margin: 50px 50px 50px 50px;
+    padding: 25px;
+    width:450px;
+    height:275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+   
+    
+    
+  }
+  img {
+    opacity: 0.7;
+    display: block;
+    
+  }
+
+h1{
+    color: #FFC300;
+    font-family: abril fontface;
+    font-size: 75px;
+    text-align: center;
+}
