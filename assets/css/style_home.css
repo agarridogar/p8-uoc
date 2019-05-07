@@ -1,0 +1,24 @@
+
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+h1 {
+    color:#FFC300;
+    font-family: abril fontface;
+    font-size: 75px;
+}
+
+button {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    width: 10%;
+
+}
+
+
