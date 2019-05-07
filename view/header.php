@@ -34,8 +34,8 @@
             <li><a href="#">Servicios</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            <li><a href="?c=usuario&a=RegistroUsuarios"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-            <li><a href="?c=usuario&a=LoginUsuario"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="?c=web&a=RegistroUsuarios"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
+            <li><a href="?c=web&a=LoginUsuario"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
         </nav>

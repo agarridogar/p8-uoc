@@ -1,5 +1,5 @@
 <?php
-require_once 'model/model_products.php';
+require_once 'usuario.controller.php';
 
 class WebController{
 
@@ -26,6 +26,31 @@ class WebController{
         require_once 'view/faq/vista_faq.php';
         require_once 'view/footer.php';
     }
+
+
+    //vista login usuario
+    public function LoginUsuario(){
+
+        $user = new Usuario();
+
+        require_once 'view/header.php';
+        require_once 'view/usuario/vista_login_usuario.php';
+        require_once 'view/footer.php';
+    }
+
+
+
+    //vista registro usuario
+    public function RegistroUsuarios(){
+		
+		$user= new Usuario();
+		
+		require_once 'view/header.php';
+        require_once 'view/usuario/vista_registro_usuarios.php';
+        require_once 'view/footer.php';
+
+	}
+    
 
 
 }
