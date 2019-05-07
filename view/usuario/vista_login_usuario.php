@@ -46,7 +46,7 @@
                     <form action="?c=web&a=RegistroUsuarios" method="post" enctype="multipart/form-data">                    
                         <div class="form-group">
                             <div class="text-center">                    
-                            <button class="btn btn-responsive btninter"><b>Iniciar sesión</b></button>
+                            <button class="btn btn-responsive btninter"><b>Registrarse</b></button>
                             </div>
                         </div">
                     </form>
