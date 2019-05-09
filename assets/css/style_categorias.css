@@ -14,7 +14,7 @@ html, body { height: 100%; }
     margin: 50px 50px 50px 50px;
     padding: 25px;
     width:450px;
-    height:275px;
+    height:150px;
     display: flex;
     justify-content: center;
     align-items: center;
