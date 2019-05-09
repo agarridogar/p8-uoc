@@ -2,7 +2,12 @@
                 <div class="col-xs-12">
                     <hr />
                     <footer class="text-center well">
-                        <img src="assets/img/rrss.jpg" style="width: 10%; height: 10%;"/> 
+                       
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+
                     </footer>                
                 </div>    
             </div>

@@ -10,7 +10,7 @@ html, body { height: 100%; }
 
   div #subcat {
     border: none;
-    background-color: lightblue;
+    background-color: steelblue;
     margin: 50px 50px 50px 50px;
     padding: 25px;
     width:450px;
@@ -30,9 +30,14 @@ html, body { height: 100%; }
     
   }
 
-h1{
+  h1{
     color: #FFC300;
     font-family: abril fontface;
     font-size: 75px;
     text-align: center;
-}
+  }
+
+  #subcat a{
+     color: white;
+     margin:2%;
+  }
