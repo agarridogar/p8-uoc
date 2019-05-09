@@ -42,7 +42,7 @@ class UsuarioController  {
         $user->email = $_REQUEST['email'];
 
            $this->model_usuario->Registrar($user);
-           header("Location: index.php?c=web&a=LoginUsuario");        
+                 
     
 	}
 

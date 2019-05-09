@@ -84,6 +84,7 @@ class Usuario
                     $data->email, 
                 )
 			);
+			header("Location: index.php?c=web&a=LoginUsuario");  
 		} catch (Exception $e) 
 		{
 			$_SESSION['errorvalidacion'] ="Error en el registro. El nombre de usuario ya existe.";			
