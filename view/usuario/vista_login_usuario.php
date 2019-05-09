@@ -4,7 +4,7 @@
 
 <div class="container login-container">
             <div class="row">
-                <div class="col-md-6 login-form-1">
+                <div class="col-md-6  col-md-offset-1 login-form-1">
                 <h3>Inicia sesión</h3>
                     <form action="?c=usuario&a=iniciarSesion" method="post" enctype="multipart/form-data">                    
                     <div class="text-center"> 
