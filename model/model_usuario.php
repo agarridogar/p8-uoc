@@ -87,7 +87,7 @@ class Usuario
 		} catch (Exception $e) 
 		{
 			$_SESSION['errorvalidacion'] ="Error en el registro. El nombre de usuario ya existe.";			
-			header("Location: index.php?c=usuario&a=RegistroUsuarios");
+			header("Location: index.php?c=web&a=RegistroUsuarios");
 		}
 	}
 
