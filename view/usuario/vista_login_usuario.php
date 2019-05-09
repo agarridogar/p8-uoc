@@ -48,7 +48,7 @@
                             <div class="text-center">                    
                             <button class="btn btn-responsive btninter"><b>Registrarse</b></button>
                             </div>
-                        </div">
+                        </div>
                     </form>
                 </div>
         </div>
