@@ -41,7 +41,8 @@ class UsuarioController  {
         $user->password = $password ;
         $user->email = $_REQUEST['email'];
 
-       	$this->model_usuario->Registrar($user);        
+           $this->model_usuario->Registrar($user);
+                 
     
 	}
 
