@@ -27,7 +27,7 @@
             <ul class="nav navbar-nav">
             <li><a href="#">Packs</a></li>
             <li><a href="?c=categorias&a=ListarVistaCategorias">Categorias</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="?c=web&a=Contacto">Contacto</a></li>
             <li><a href="#">Dónde estamos</a></li>
             <li><a href="?c=nosotros&a=VistaNosotros">Quiénes somos</a></li>
             <li><a href="?c=web&a=faq">FAQ</a></li>

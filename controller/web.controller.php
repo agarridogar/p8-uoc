@@ -48,7 +48,16 @@ class WebController{
         require_once 'view/usuario/vista_registro_usuarios.php';
         require_once 'view/footer.php';
 
-	}
+    }
+    
+    //vista registro contacto
+
+    public function Contacto(){
+        require_once 'view/header.php';
+        require_once 'view/vista_contacto.php';
+        require_once 'view/footer.php';    
+    }
+        
     
 
 
