@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="assets/css/style_faq.css" />
 
-<center>
+
     <div>
         <h1>FAQ</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat elit et iaculis varius. Nam sed augue suscipit, gravida purus at, faucibus sem. Praesent id cursus lacus. Sed in mattis orci. Proin vulputate est at ligula tristique imperdiet. Praesent pretium viverra ipsum ornare faucibus. In blandit risus sem, eget luctus sem sagittis semper. 
@@ -14,4 +14,3 @@
             Duis vulputate fermentum neque quis faucibus. Donec sit amet arcu eu nunc consectetur commodo. Cras eu interdum eros. Sed sit amet nunc ante. Ut tempor elit lorem, eget rhoncus ex faucibus in. Donec ut feugiat lectus, nec mattis erat. Quisque non dapibus massa. </p>
     </div>
 
-</center>

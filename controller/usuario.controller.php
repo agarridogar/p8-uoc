@@ -11,15 +11,9 @@ class UsuarioController  {
         $this->model_usuario = new Usuario();
     }
     
-    public function LoginUsuario(){
 
-        $user = new Usuario();
-
-        require_once 'view/header.php';
-        require_once 'view/usuario/vista_login_usuario.php';
-        require_once 'view/footer.php';
-    }
-
+    //función para que inicie sesión un usuario registrado
+    
     public function iniciarSesion(){
 		
 		$user = new Usuario();
@@ -34,18 +28,8 @@ class UsuarioController  {
     }
     
     
-    public function RegistroUsuarios(){
-		
-		$user= new Usuario();
-		
-		require_once 'view/header.php';
-        require_once 'view/usuario/vista_registro_usuarios.php';
-        require_once 'view/footer.php';
-
-	}
-    
-    
-    
+    //función para registrarse en la app
+     
     public function registrarUsuario(){
 
 		$user = new Usuario();
@@ -57,7 +41,8 @@ class UsuarioController  {
         $user->password = $password ;
         $user->email = $_REQUEST['email'];
 
-       	$this->model_usuario->Registrar($user);        
+           $this->model_usuario->Registrar($user);
+                 
     
 	}
 
