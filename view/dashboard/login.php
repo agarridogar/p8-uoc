@@ -18,7 +18,7 @@
                 <h3>Panel de administración</h3>
                 <input type="text" class="form-control" placeholder="Nombre de usuario"/>
                 <input type="password" class="form-control" placeholder="Contraseña"/>
-                <a type="button" href="./?c=dashboard&a=boats" class="btn btn-primary">Iniciar session</a>
+                <a type="button" href="./?c=dashboard&a=boat" class="btn btn-primary">Iniciar session</a>
             </div>
         </main>
     </body>
