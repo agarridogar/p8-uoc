@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="assets/css/style_servicios.css" />
 
 <div class="nuestros">
-    <h3>NUESTROS SERVICIOS</h3>
+    <h4>NUESTROS SERVICIOS</h4>
     <p>
         En Sun Coast Boat Booking satisfacemos la necesidad del viajero que busca experiencias únicas, 
         diferentes y sobre todo exclusivas, un tipo de turista que no sólo busca sol y playa sino recuerdos inolvidables.

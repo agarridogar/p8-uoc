@@ -31,6 +31,17 @@ class Categorias{
 			die($e->getMessage());
 		}
     } 
+
+    public function ObtenerProductoId($categoria_id) {
+		try {
+			$stm = $this->pdo->prepare("SELECT * FROM barcos WHERE categoria_id='$categoria_id'");
+			$stm->execute();
+			return $stm->fetchAll(PDO::FETCH_OBJ);
+		}
+		catch(Exception $e) {
+			die($e->getMessage());
+		}
+	}
     
     
 

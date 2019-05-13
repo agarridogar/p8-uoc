@@ -27,8 +27,7 @@
             <a class="navbar-brand" href="#"><img src="assets/img/logo_pequeno.png" style="width: 50px; height: 50px;"/></a>
             </div>
             <ul class="nav navbar-nav">
-            <li><a href="#">Packs</a></li>
-            <li><a href="?c=categorias&a=ListarVistaCategorias">Categorias</a></li>
+            <li><a href="?c=categorias&a=ListarVistaCategorias">Packs</a></li>
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Dónde estamos</a></li>
             <li><a href="?c=nosotros&a=VistaNosotros">Quiénes somos</a></li>
