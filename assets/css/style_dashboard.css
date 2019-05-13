@@ -1,0 +1,137 @@
+.dashboard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f0eff3;
+  min-height: 80vh;
+}
+.dashboard div {
+  box-sizing: border-box;
+}
+.dashboard h1 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.whitebox {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 50px;
+}
+
+footer {
+  background-color: #2e2e2e;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+header .logo {
+}
+header .menu {
+  min-width: 600px;
+}
+header .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.dashboard .add_area {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.dashboard .add_area button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 22px;
+}
+
+/***********************************/
+/* Estilos para la pagina de login */
+/***********************************/
+.dashboard.login {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard.login h1 {
+  margin-bottom: 50px;
+}
+.dashboard.login h3 {
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.dashboard.login input {
+  margin-bottom: 30px;
+  min-width: 300px;
+}
+.dashboard.login button {
+}
+
+/*************************/
+/* Estilos para la modal */
+/*************************/
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(000, 000, 000, 0.7);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .boat {
+  display: none;
+  flex-direction: column;
+}
+.modal .port {
+  display: none;
+  flex-direction: column;
+}
+.modal .category {
+  display: none;
+  flex-direction: column;
+}
+
+.modal h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.modal input {
+  margin-bottom: 15px;
+}
