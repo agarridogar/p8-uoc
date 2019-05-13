@@ -1,17 +1,17 @@
 <?php
 require_once 'model/modelo_categorias.php';
-require_once 'model/modelo_barcos.php';
+
 
 
 
 class CategoriasController  {
     
     private $model_cat;
-    private $barcos;
+    
     
     public function __CONSTRUCT(){
         $this->model_cat = new Categorias();
-        $this->barcos= new Barcos();
+        
     }
     
     public function ListarVistaCategorias(){
