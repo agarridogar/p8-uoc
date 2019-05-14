@@ -1,0 +1,54 @@
+.nuestros p{
+border: none;
+background-color:  steelblue;
+color:white;
+padding:10%;
+font-size: 18px;
+}
+
+.nuestros h3{
+color:  #212f3d ;
+text-align: center;
+padding: 2%;
+font-size: 30px;
+}
+.nuestros{
+    margin-bottom: 5%;
+}
+
+.servicios{
+    background-color:  #7b241c ;
+}
+
+.servicios p{
+
+color:white;
+
+}
+.servicios h3{
+    text-align: center;
+    color:white;
+    padding: 2%;
+    font-size: 30px;
+
+}
+
+.col-5 {
+    border: solid 1px white;
+    padding:2%;
+    float:left;
+    margin-left:10%;
+    margin-bottom: 5%;
+    width: 20%;
+    text-align: center;
+    color:white;
+    font-size: 18px;
+
+}
+
+h4{
+    color: #FFC300;
+  font-family: abril fontface;
+  font-size: 45px;
+  text-align: center;
+}

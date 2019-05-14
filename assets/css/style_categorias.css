@@ -8,13 +8,13 @@ html, body { height: 100%; }
     margin:0%;
   }
 
-  div #subcat {
+  div #subcat  {
     border: none;
-    background-color: lightblue;
+    background-color: steelblue;
     margin: 50px 50px 50px 50px;
     padding: 25px;
     width:450px;
-    height:275px;
+    height:150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,15 +24,17 @@ html, body { height: 100%; }
     
     
   }
-  img {
-    opacity: 0.7;
-    display: block;
-    
-  }
+  
 
-h1{
+  h1{
     color: #FFC300;
     font-family: abril fontface;
     font-size: 75px;
     text-align: center;
-}
+  }
+
+  #subcat a{
+     color: white;
+     margin:2%;
+  }
+  

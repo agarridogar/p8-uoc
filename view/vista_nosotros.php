@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="assets/css/style_nosotros.css" />
     <main>
         <div class="nosotros">
-            <img src="assets/img/nosotros.jpg" alt="nosotros" style=" width: 100%; height: 100%;"/>
+            <img src="assets/img/about.jpg" alt="nosotros" style=" width: 100%; height: 100%;"/>
         </div>
 
 
