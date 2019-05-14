@@ -1,4 +1,11 @@
 <?php
+
+function console_log( $data ){
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+  }
+
 require_once 'model/database.php';
 session_start();
 
@@ -28,3 +35,5 @@ else
     // Llama la accion
     call_user_func( array( $controller, $accion ) );
 }
+
+?>

@@ -22,17 +22,24 @@ class DashboardController  {
         $boatsModel = new Boats();
         $response = $boatsModel->addBoat($_POST);
 
-        // $data = $_POST;
-        // header('Content-Type: application/json');
-        // echo json_encode($data);
+        if ($response !== "Transition OK") {
+            http_response_code(500);
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($response);
     }
 
     public function deleteBoat() {
         $boatsModel = new Boats();
+        $response = $boatsModel->deleteBoat($_POST['id']);
 
-        $data = $_POST;
+        if ($response !== "Transition OK") {
+            http_response_code(500);
+        }
+
         header('Content-Type: application/json');
-        echo json_encode($data);
+        echo json_encode($response);
     }
 
     public function category() {
@@ -49,17 +56,24 @@ class DashboardController  {
         $categoriesModel = new Categories();
         $response = $categoriesModel->addCategory($_POST);
 
-        // $data = $_POST;
-        // header('Content-Type: application/json');
-        // echo json_encode($data);
+        if ($response !== "Transition OK") {
+            http_response_code(500);
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($response);
     }
 
     public function deleteCategory() {
         $categoriesModel = new Categories();
+        $response = $categoriesModel->deleteCategory($_POST['id']);
 
-        $data = $_POST;
+        if ($response !== "Transition OK") {
+            http_response_code(500);
+        }
+
         header('Content-Type: application/json');
-        echo json_encode($data);
+        echo json_encode($response);
     }
 
     public function port() {
@@ -76,16 +90,24 @@ class DashboardController  {
         $portsModel = new Ports();
         $response = $portsModel->addPort($_POST);
 
-        // header('Content-Type: application/json');
-        // $myJSON = json_encode(array("John", "Sally"));
-        // echo $myJSON;
+        if ($response !== "Transition OK") {
+            http_response_code(500);
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($response);
     }
 
     public function deletePort() {
         $portsModel = new Ports();
+        $response = $portsModel->deletePort($_POST['id']);
 
-        $data = $_POST;
+        if ($response !== "Transition OK") {
+            http_response_code(500);
+        }
+
         header('Content-Type: application/json');
-        echo json_encode($data);
+        echo json_encode($response);
+
     }
 }

@@ -15,7 +15,7 @@
             <th><?php print_r($value['categoria_id']); ?></th>
             <td><?php print_r($value['categoria_barco']); ?></td>
             <td class="action">
-              <img src="#"/>
+              <span onclick="deleteCategory(<?php echo $value['categoria_id'] ?>)" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
             </td>
           </tr>
         <?php } ?>

@@ -68,6 +68,11 @@ header .menu ul {
   font-size: 22px;
 }
 
+.dashboard table tbody td,
+.dashboard table tbody th {
+  text-align: center;
+}
+
 /***********************************/
 /* Estilos para la pagina de login */
 /***********************************/

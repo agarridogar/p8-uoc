@@ -25,12 +25,24 @@
 		try {
 			$stm = $this->pdo->prepare("INSERT INTO categorias (categoria_barco)
             VALUES (?);");
-            $stm->execute(array(
+            $stm->execute([
                 $data['category']
-            ));
+			]);
+			return 'Transition OK';
 		}
 		catch(Exception $e) {
-			die($e->getMessage());
+			return $e->getMessage();
 		}
 	}
+
+	public function deleteCategory($id) {
+		try {
+			$stm = $this->pdo->prepare("DELETE FROM categorias WHERE categoria_id=?;");
+			$stm->execute([$id]);
+			return 'Transition OK';
+		}
+		catch(Exception $e) {
+			return $e->getMessage();
+		}
+    }
 } ?>

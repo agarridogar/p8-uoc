@@ -25,7 +25,7 @@
             <td><?php print_r($value['barco_imagen']); ?></td>
             <td><?php print_r($value['precio_pack']); ?></td>
             <td class="action">
-              <img src="#"/>
+              <span onclick="deleteBoat(<?php echo $value['barco_id'] ?>)" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
             </td>
           </tr>
         <?php } ?>

@@ -17,7 +17,7 @@
             <th><?php print_r($value['puerto_id']); ?></th>
             <td><?php print_r($value['puerto_descripcion']); ?></td>
             <td class="action">
-              <img src="#"/>
+              <span onclick="deletePort(<?php echo $value['puerto_id'] ?>)" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
             </td>
           </tr>
         <?php } ?>
