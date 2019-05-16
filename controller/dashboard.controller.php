@@ -4,11 +4,33 @@ require_once 'model/model_categories.php';
 require_once 'model/model_boats.php';
 
 class DashboardController  {
+    private function checkSession() {
+        session_start();
+        if($_SESSION["token"] != 'Y29udHJhc2XxYXVsdHJhc2VndXJh') {
+            header('Location: ?c=dashboard', true);
+        }
+    }
+
     public function Index() {
+        session_start();
+        if($_SESSION["token"] == 'Y29udHJhc2XxYXVsdHJhc2VndXJh') {
+            header('Location: ?c=dashboard&a=boat', true);
+        }
+
+        if($_POST['user'] == 'sergio' && $_POST['pwd'] == 'sunset') {
+            $_SESSION["token"] = 'Y29udHJhc2XxYXVsdHJhc2VndXJh';
+            header('Location: ?c=dashboard&a=boat', true);
+        }
         require_once 'view/dashboard/login.php';
     }
 
+    public function logout() {
+        session_start();
+        session_destroy();
+    }
+
     public function boat() {
+        $this->checkSession();
         $boatsModel = new Boats();
         $response = $boatsModel->getAllBoats();
 
@@ -43,6 +65,7 @@ class DashboardController  {
     }
 
     public function category() {
+        $this->checkSession();
         $categoriesModel = new Categories();
         $response = $categoriesModel->getAllCategories();
 
@@ -77,6 +100,7 @@ class DashboardController  {
     }
 
     public function port() {
+        $this->checkSession();
         $portsModel = new Ports();
         $response = $portsModel->getAllPort();
 

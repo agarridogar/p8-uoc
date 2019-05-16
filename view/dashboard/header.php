@@ -21,7 +21,7 @@
                     <li><a href="?c=dashboard&a=boat">Barcos</a></li>
                     <li><a href="?c=dashboard&a=category">Categorias</a></li>
                     <li><a href="?c=dashboard&a=port">Puertos</a></li>
-                    <li><a href="?c=dashboard&a=boat">Logout</a></li>
+                    <li><a href="?c=dashboard&a=logout">Logout</a></li>
                 </ul>
             </div>
         </header>
