@@ -8,7 +8,7 @@
         <h1><b>Boat Booking</b></h1>
     </div>
     <div>
-    <button  type="button" class="btn btn-light"><a  href="#">Ver packs</a></button>
+    <button  type="button" class="btn btn-light"><a  href="?c=categorias&a=ListarVistaCategorias">Ver packs</a></button>
     </div>
 </center>
 

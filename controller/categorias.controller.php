@@ -36,6 +36,8 @@ class CategoriasController  {
         require_once 'view/footer.php'; 
     }
 
+    
+
    
     
 }
