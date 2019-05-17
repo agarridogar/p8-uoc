@@ -42,6 +42,17 @@ class Categorias{
 			die($e->getMessage());
 		}
 	}
+	//función para saber +info del barco que queremos reservar
+	public function infoBoat($barco_id){
+		try {
+			$stm = $this->pdo->prepare("SELECT * FROM barcos, categorias WHERE barco_id='$barco_id'");
+			$stm->execute();
+			return $stm->fetchAll(PDO::FETCH_OBJ);
+		}
+		catch(Exception $e) {
+			die($e->getMessage());
+		}
+	}
     
     
 

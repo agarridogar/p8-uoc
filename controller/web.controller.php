@@ -4,6 +4,8 @@ require_once 'model/model_boats.php';
 
 class WebController{
 
+    
+
     public function Index(){
         require_once 'view/header.php';
         require_once 'view/home.php';
@@ -59,14 +61,7 @@ class WebController{
         require_once 'view/footer.php';    
     }
         
-    //vista de compra barco
-    public function compraBarco(){
-        $barco=new Boats();
-
-        require_once 'view/header.php';
-        require_once 'view/products.php';
-        require_once 'view/footer.php'; 
-    }
+    
 
 
 }

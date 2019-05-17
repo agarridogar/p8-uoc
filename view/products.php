@@ -1,14 +1,17 @@
 <link rel="stylesheet" href="assets/css/style_products.css" />
 
 <main class="product-area">
+<?php foreach($this->model_cat->infoBoat($_REQUEST['barco_id']) as $r):  ?>
 	<div>
-		<h1>Nombre producto</h1>
+		<h1><?php echo $r->categoria_barco;?></h1>
+		
 		<div class="white-box column-design">
 			<div class="header-products column-design">
 				<div class="principal-box row-design">
 					<div class="images column-design">
 						<div class="principal">
-							<img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/2017/12760-search-term-landing-pages/images/tahoe-lifestyle.jpg"/>
+							<!--<img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/2017/12760-search-term-landing-pages/images/tahoe-lifestyle.jpg"/>-->
+							<img src="<?php echo $r->barco_imagen;?>" alt="" />
 						</div>
 						<div class="more-img row-plain">
 							<img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/2017/12760-search-term-landing-pages/images/tahoe-lifestyle.jpg"/>
@@ -17,9 +20,10 @@
 							<img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/2017/12760-search-term-landing-pages/images/tahoe-lifestyle.jpg"/>
 						</div>
 					</div>
+					
 					<div class="excerpt column-design">
 						<p class="price">
-							Desde 500€ / medio dia <br>
+						    Desde <?php echo $r->precio_pack; ?>€ / medio dia <br>
 							Desde 900€ / dia <br>
 							Desde 4000€ / semana <br>
 						</p>
@@ -27,35 +31,36 @@
 						<button class="btn suncoast">
 							Solicita presupuesto sin compomiso
 						</button>
-						</div>
+					</div>
+						
 				</div>
 				<div class="perks row-design">
 					<div class="column-design">
 						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-						XX plazas
+						<?php echo $r->max_pasajeros; ?> plazas
 					</div>
 					<div class="column-design">
 						<span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-						XX baños
+						1 baño
 					</div>
 					<div class="column-design">
 						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-						Min- X dias
+						Min 2 días
 					</div>
 					<div class="column-design">
 						<span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
-						Con Patron
+						Con Patrón
 					</div>
 				</div>
 			</div>
 			<div class="description">
-				<h3>Description</h3>
+				<h3>Descripción</h3>
 				<p>
-					Princess 36 con patron para 12 personas <br>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+				<?php echo $r->descripcion_barco; ?>
 				</p>
 			</div>
 		</div>
+		<?php endforeach ?>
 		<div class="white-box">
 			<h4>Caracteristicas</h4>
 			<ul>
@@ -79,6 +84,9 @@
 			</ul>
 		</div>
 	</div>
+
+	
+
 </main>
 
 

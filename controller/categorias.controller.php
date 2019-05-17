@@ -27,6 +27,14 @@ class CategoriasController  {
  
         
     }
+    //muestra el barco del que queremos +info
+    public function compraBarco(){
+        
+
+        require_once 'view/header.php';
+        require_once 'view/products.php';
+        require_once 'view/footer.php'; 
+    }
 
    
     
