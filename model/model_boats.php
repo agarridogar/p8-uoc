@@ -1,6 +1,8 @@
 <?php class Boats {
 	private $pdo;
 
+	
+
 	public function __CONSTRUCT() {
 		try {
 			$this->pdo = Database::StartUp();     

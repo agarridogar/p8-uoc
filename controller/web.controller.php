@@ -1,7 +1,10 @@
 <?php
 require_once 'usuario.controller.php';
+require_once 'model/model_boats.php';
 
 class WebController{
+
+    
 
     public function Index(){
         require_once 'view/header.php';
