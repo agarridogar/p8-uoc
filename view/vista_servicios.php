@@ -1,7 +1,12 @@
 <link rel="stylesheet" href="assets/css/style_servicios.css" />
 
+<div>
+    
+    <img src="assets/img/snorkel_txt.jpg" alt="nosotros" style=" width: 100%; height: 100%;"/>
+</div>
+
 <div class="nuestros">
-    <h4>NUESTROS SERVICIOS</h4>
+    
     <p>
         En Sun Coast Boat Booking satisfacemos la necesidad del viajero que busca experiencias únicas, 
         diferentes y sobre todo exclusivas, un tipo de turista que no sólo busca sol y playa sino recuerdos inolvidables.
