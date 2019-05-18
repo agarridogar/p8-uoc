@@ -3,7 +3,7 @@
 <main class="product-area">
 <?php foreach($this->model_cat->infoBoat($_REQUEST['barco_id']) as $r):  ?>
 	<div>
-		<h1><?php echo $r->categoria_barco;?></h1>
+		<h1></h1>
 		
 		<div class="white-box column-design">
 			<div class="header-products column-design">

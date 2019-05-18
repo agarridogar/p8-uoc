@@ -16,9 +16,11 @@
             <h1>SunCoat</h1>
             <div class="whitebox">
                 <h3>Panel de administración</h3>
-                <input type="text" class="form-control" placeholder="Nombre de usuario"/>
-                <input type="password" class="form-control" placeholder="Contraseña"/>
-                <a type="button" href="./?c=dashboard&a=boat" class="btn btn-primary">Iniciar session</a>
+                <form method="post">
+                    <input name="user" type="text" class="form-control" placeholder="Nombre de usuario"/>
+                    <input name="pwd" type="password" class="form-control" placeholder="Contraseña"/>
+                    <input type="submit" class="btn btn-primary" value="Iniciar session"/>
+                </form>
             </div>
         </main>
     </body>
