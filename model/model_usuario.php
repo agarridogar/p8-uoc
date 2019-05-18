@@ -121,7 +121,8 @@ class Usuario
 
 			//header("Location: index.php");
 		}else{
-			echo "Error.";  
+			$_SESSION['erroracceso'] ="Error en acceso. Vuelva a introducir sus credenciales.";			
+			header("Location: index.php?c=web&a=LoginUsuario"); 
 		} 
 	}
 }
