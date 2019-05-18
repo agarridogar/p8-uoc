@@ -21,7 +21,7 @@
         
     <div class="container">
 
-            <nav class="navbar">
+        <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
             <a class="navbar-brand" href="#"><img src="assets/img/logo_pequeno.png" style="width: 50px; height: 50px;"/></a>
@@ -35,9 +35,12 @@
             <li><a href="?c=servicios&a=VistaServicios">Servicios</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+            
+            <?php if(empty($_SESSION['nombre'])){ ?>
             <li><a href="?c=web&a=RegistroUsuarios"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
             <li><a href="?c=web&a=LoginUsuario"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
+            <?php } ?>
             
         </div>
         </nav>

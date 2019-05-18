@@ -117,7 +117,7 @@ class Usuario
 			$sesionrol=$_SESSION['roles_descripcion'];
 		
 			//esto lo pongo de momento, luego redirigirá a la página de inicio
-			echo "Nombre del user: ".$sesion;
+			header("Location: index.php");  
 
 			//header("Location: index.php");
 		}else{
