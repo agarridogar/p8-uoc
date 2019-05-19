@@ -23,9 +23,9 @@
 							<p><?php echo $product['precio_pack'] ?> € al dia </p>
 						</div>
 						
-						<button class="btn suncoast">
-							Solicita presupuesto sin compomiso
-						</button>
+						<a class="btn suncoast" href="?c=cart&id=<?php echo $product['barco_id'] ?>">
+							Comprar pack
+						</a>
 						</div>
 				</div>
 				<div class="perks row-design">
