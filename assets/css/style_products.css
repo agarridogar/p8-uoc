@@ -1,9 +1,15 @@
+nav.navbar {
+  background-color: white;
+  padding: 30px 0;
+}
+
 body {
   background-color: #cccccc !important;
 }
 
 main.product-area {
   background-color: #cccccc;
+  margin-top: 40px;
 }
 
 main.product-area div {
