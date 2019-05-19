@@ -1,0 +1,103 @@
+nav.navbar {
+  background-color: white;
+  padding: 30px 0;
+}
+
+body {
+  background-color: #cccccc !important;
+}
+
+main.cart-area {
+  background-color: #cccccc;
+  margin-top: 20px;
+}
+
+main.cart-area div {
+  box-sizing: border-box;
+}
+
+main.cart-area img {
+  width: 100%;
+}
+
+main.cart-area h1 {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+main.cart-area .white-box {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+main.cart-area .column-design {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+main.cart-area .row-design {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main.cart-area .row-plain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main.cart-area .payment-info {
+  width: 65%;
+}
+main.cart-area .payment-info input {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+main.cart-area .payment-item {
+  margin-left: 50px;
+  flex: 1;
+}
+main.cart-area .payment-item h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+main.cart-area .payment-item .total {
+  margin: 0;
+  margin-top: 20px;
+  text-align: right;
+}
+main.cart-area .payment-item .product {
+  background-color: #daeafe;
+  padding: 10px;
+}
+main.cart-area .payment-item .img-area {
+  flex-basis: 40%;
+}
+main.cart-area .payment-item .content-area {
+  flex: 1;
+  margin-left: 20px;
+}
+main.cart-area .payment-item .content-area h3 {
+  margin: 0;
+}
+main.cart-area .payment-item .content-area span {
+}
+main.cart-area .payment-item .content-area .price {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}

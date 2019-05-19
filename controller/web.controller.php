@@ -1,6 +1,7 @@
 <?php
 require_once 'usuario.controller.php';
 require_once 'model/model_boats.php';
+require_once 'model/model_products.php';
 
 class WebController{
 
@@ -16,7 +17,7 @@ class WebController{
 
         $idProduct = $_REQUEST['id'];
         $productsModel = new Products();
-        $product = $productsModel->getProductById($idProduct);
+        $product = $productsModel->getProductById($idProduct)[0];
 
         require_once 'view/header.php';
         require_once 'view/products.php';

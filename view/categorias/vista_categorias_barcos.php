@@ -9,7 +9,7 @@
                 <h3>Ref. Barco: 00<?php echo $catbar->barco_id; ?></h3> 
                 <h6>Precio: <?php echo $catbar->precio_pack; ?> €</h6>
                 <img src="<?php echo $catbar->barco_imagen;?>" alt=""  style="widht:10px, height:20px; "/>
-                <button  type="button" class="btn btn-light"><a href="?c=categorias&a=compraBarco&barco_id=<?php echo $catbar->barco_id;?>">+ INFO</a></button>
+                <button  type="button" class="btn btn-light"><a href="?a=products&id=<?php echo $catbar->barco_id ?>">+ INFO</a></button>
                 
             <div>
         <?php endforeach ?>
