@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="assets/css/style_products.css" />
 
 <main class="product-area">
-<?php foreach($this->model_cat->infoBoat($_REQUEST['barco_id']) as $r):  ?>
 	<div>
 		<h1>Barco Nº: <?php echo $product['barco_id'] ?></h1>
 		<div class="white-box column-design">
@@ -55,9 +54,4 @@
 			</div>
 		</div>
 	</div>
-
-	
-
-
-
 </main>
