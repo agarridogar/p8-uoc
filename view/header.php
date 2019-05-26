@@ -29,12 +29,13 @@
             <ul class="nav navbar-nav">
             <li><a href="?c=categorias&a=ListarVistaCategorias">Packs</a></li>
             <li><a href="?c=web&a=Contacto">Contacto</a></li>
-            <li><a href="#">Dónde estamos</a></li>
+            <!--<li><a href="#">Dónde estamos</a></li>-->
             <li><a href="?c=nosotros&a=VistaNosotros">Quiénes somos</a></li>
             <li><a href="?c=web&a=faq">FAQ</a></li>
             <li><a href="?c=servicios&a=VistaServicios">Servicios</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+
             
             <?php if(empty($_SESSION['nombre'])){ ?>
             <li><a href="?c=web&a=RegistroUsuarios"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
