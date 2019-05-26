@@ -16,6 +16,7 @@
             <h1>SunCoat</h1>
             <div class="whitebox">
                 <h3>Panel de administración</h3>
+                <p>user: sergio, pass:sunset</p>
                 <form method="post">
                     <input name="user" type="text" class="form-control" placeholder="Nombre de usuario"/>
                     <input name="pwd" type="password" class="form-control" placeholder="Contraseña"/>
