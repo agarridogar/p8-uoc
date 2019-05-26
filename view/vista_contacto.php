@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="assets/css/style_contacto.css" />
 
 
-<div id="cabeceracontacto">"
+<div id="cabeceracontacto">
 <img src="assets/img/contacto.jpg" alt="contacto" class="imgcabeceracontacto""/>
 </div>
 

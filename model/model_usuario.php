@@ -97,7 +97,7 @@ class Usuario
 
 	public function Validar($user){
 		
-		$sql = "SELECT a.nombre, b.roles_descripcion as roles_descripcion
+		$sql = "SELECT a.nombre, a.roles_id, b.roles_descripcion as roles_descripcion
 		FROM usuarios a 
 		INNER JOIN roles b where 
 		(a.nombre = :nombre  AND a.password = :password) and a.roles_id = b.id_rol ;"; 
@@ -113,8 +113,8 @@ class Usuario
 			$_SESSION['nombre']=$data->nombre;
 			$sesion=$_SESSION['nombre'];
 
-			$_SESSION['roles_descripcion']=$data->roles_descripcion;
-			$sesionrol=$_SESSION['roles_descripcion'];
+			$_SESSION['roles_id']=$data->roles_id;
+			$sesionrol=$_SESSION['roles_id'];
 		
 			//esto lo pongo de momento, luego redirigirá a la página de inicio
 			header("Location: index.php");  

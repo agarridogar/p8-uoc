@@ -9,7 +9,7 @@
                     <p> &copy; Suncoast Boat Booking. <?=date('Y')?>.
                     <?php
                         if(isset($_SESSION["nombre"])){
-                            echo " Usuario: ".$_SESSION["nombre"]. " <a href='model/model_cerrarsesion.php'>Cerrar sesión</a>";
+                            echo " Usuario: ".$_SESSION["nombre"].$_SESSION["roles_id"]. " <a href='model/model_cerrarsesion.php'>Cerrar sesión</a>";
                         }else{
                             echo " Sesión no iniciada.";
                         }
